@@ -1,0 +1,97 @@
+/**
+ * HTML5 / CSS3 Circle with Partial Border
+ * http://stackoverflow.com/q/13059190/1397351
+ */
+* { margin: 0; padding: 0; }
+.circle {
+	position: relative;
+	margin: 6em auto;
+	width: 12em; height: 12em;
+	border-radius: 50%;
+	background: transparent;
+	border:20px solid #efefef;
+	border-top-color: #efefef;
+    border-right-color: #efefef;
+    border-bottom-color: #efefef;
+    border-left-color: #efefef;
+    
+    -webkit-transition:.5s;-moz-transition:.5s;transition:.5s;
+}
+.circle:hover{
+      -webkit-animation:  animix 0.5s 1;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation:  animix 0.5s 1;
+      -moz-animation-fill-mode: forwards;
+      animation:  animix 0.5s 1;
+      animation-fill-mode: forwards;
+}
+
+
+
+  //Animate
+   @-webkit-keyframes animix {
+    0% { 
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+     25% { 
+       border-top-color: red;
+       border-right-color: transparent;
+       border-bottom-color: transparent;
+       border-left-color: transparent;
+     }
+     50% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: transparent;
+       border-left-color: transparent;
+     }
+     75% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: red;
+       border-left-color: transparent;
+     }
+     100% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: red;
+       border-left-color: red;
+     }
+   }
+   
+      @keyframes animix {
+    0% { 
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+     25% { 
+       border-top-color: red;
+       border-right-color: transparent;
+       border-bottom-color: transparent;
+       border-left-color: transparent;
+     }
+     50% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: transparent;
+       border-left-color: transparent;
+     }
+     75% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: red;
+       border-left-color: transparent;
+     }
+     100% { 
+       border-top-color: red;
+       border-right-color: red;
+       border-bottom-color: red;
+       border-left-color: red;
+     }
+   }
+   <div class="circle"> </div>
