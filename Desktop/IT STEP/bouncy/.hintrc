@@ -10,6 +10,7 @@
           "text-underline-offset"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
