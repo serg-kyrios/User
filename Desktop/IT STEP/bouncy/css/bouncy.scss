@@ -66,25 +66,27 @@ align-items: center;
 	cursor: pointer;	
 }
 .menu a{
-	// margin-left: 7px;
 	font-size: 18px;
 	color:#fff;
 	font-family: 'Open Sans';
-	// padding: 17px 9px;
-	border: 1vw solid transparent;
-	transition: 0.3s;
+	border: 1px solid transparent;
+	transition: 0.5s;
 	text-decoration: none;
+	padding: 10px 15px 10px 15px;
+	
 }
 .menu a:hover{
-	border: 2px solid #fff;
-	border-radius: 100px;
+	border: 1px solid #fff;
+	border-radius: 2.5px;
 	color:#fff;
 	text-decoration: none;
 	transition: 1s ease;
+	border-radius: 50%;
+	
 }
-.menu {
-	margin: 2vw 10vh 0vw 0vh;
-}
+// .menu {
+// 	margin: 1vw 1vh 0vw 0vh;
+// }
 // ///////////////////////////////////////////////
 
 .menu {
@@ -95,7 +97,7 @@ a {
 	padding: 0.3vw;
 	text-decoration: none;	
 	font-size: small;
-	padding: 0.3vw;
+	padding: 0.5vw;
 }
 .emphasis {
 	font-size: 16px;
@@ -108,8 +110,8 @@ a {
 	text-underline-offset: 10px;
 }
 .full_circle {
-	width: 94px;
-	height: 94px;
+	width: 84px;
+	height: 84px;
 	border: 1px solid rgba(21, 231, 6, 0.6);
 	transform: rotate(-360deg);
 	border-radius: 50%;
@@ -119,11 +121,11 @@ a {
 	margin: auto;
 	background-color: rgba(21, 231, 6, 0.6);
 } 
-img{
-display: block;
-height: 90px;
-width: 90px;
-}
+// img{
+// display: block;
+// height: 90px;
+// width: 90px;
+// }
 .img {
     position: absolute;
     width: 100%;
@@ -141,16 +143,16 @@ img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-.scroll img:hover{
-	transition: 0.5s ease;
-	transform: scale(1.2);
-	cursor: pointer;
-}
+// * {
+//     padding: 0;
+//     margin: 0;
+//     border: 0;
+// }
+// .scroll img:hover{
+// 	transition: 0.5s ease;
+// 	transform: scale(1.2);
+// 	cursor: pointer;
+// }
 h1 {
 	text-decoration-style: dashed;
 	font-weight: 100;
@@ -209,11 +211,11 @@ text-align: center;
 	width: 100vw;
 	text-align: center;
 	}
-	.text_center_title_3 {
+.text_center_title_3 {
 		color: white;
 		font-size: 32px;
 	}
-	.text_center_title_4 {
+.text_center_title_4 {
 		width: 100vw;
 		margin: auto;
 		font-family: "Montserrat";
@@ -231,13 +233,6 @@ text-align: center;
     width: 100vw;
 	margin: auto;
 }
-// scroll-----------------------------------------------------
-// .scroll {
-//     // margin: 40px auto 10px auto;
-//     // width: 3.8vw;
-//     // height: 10vh;
-// 	margin: auto;
-// 
 .scroll span {
     display: block;
     width: 30px;
@@ -269,15 +264,13 @@ text-align: center;
 }
 // scroll===================================================
 // scroll-Bar-----------------------------------------------
-// .container {
-//     height: 1200px;
-// }
+
 .element::-webkit-scrollbar { 
     width : 0 !important /* Webkit */
 } 
 .element { 
-    -ms-overflow-style : none; /* IE10+ */
-    overflow           : -moz-scrollbars-none; /* FireFox, но может не работать */
+    -ms-overflow-style : none; 
+    overflow           : -moz-scrollbars-none; 
 }
 ::-webkit-scrollbar {
     width: 15px;
@@ -312,27 +305,22 @@ text-align: center;
 	margin: auto;
     font-family: "Montserrat";
     color: rgb(51, 59, 70);
-    // text-transform: uppercase;
     line-height: 2;
     text-align: center;
 }
 .text_center_2 {
-	// height: 15vh;
     width: 100vw;
 	margin: auto;
-	background-color: white;	
-	// text-align: center;	
+
 }
 .box_img {
 	margin: auto;
 	display: flex;	
-	// height: 40vh;
-    width: 27vw;
+    width: 20vw;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .description_big {
-	// height: 28vh;
     width: 43vw;
 	margin: auto;
 	text-align: left;
@@ -446,13 +434,14 @@ font-weight: 500 ;
 	flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+	align-content: center
 }
 .big_img_1 {
 	// background-image: url(../content/jpeg\ \(8\).jpg);
 	height: 25vh;
 	width: 10vw;
 	width: 33.333%;
-	
+
 }
 .big_img_2 {
 	// background-image: url(../content/Free-Minimal-Hanging-Price-Tag-Mockup-PSD.jpg);
@@ -469,15 +458,67 @@ font-weight: 500 ;
 .photo {
 	height: 25vh;
 	width: 33.333vw;
-	display: inline-block;
+	// display: inline-block;
 	vertical-align: center;
 	margin: auto;
 	background-position: center;
 }
+.photo:hover {
+	opacity: 0.3; 
+}
+// ======================================================
+.blog{
+	// height: 25vh;
+	width: 33.333vw;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	position: relative;
+  }
+//   .blog .photo{
+// 	max-width: 100%;
+//   }
+  .blog .text_blog {
+	opacity:0;
+	position:absolute;
+	bottom: 20px;
+	left:50%;
+	transform:translate(-50%, 0);
+	transition: 0.5s;
+	width:98%;
+	font-size:22px;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:10px 5px;
+	color:#fff;
+	width: 33.333vw;
+	height: 25vh;
+  }
+  .blog:hover .text_blog {
+	opacity: 1;
+  }
+//   .text_blog {
+	
+// 	color: white;
+// 	font-size: 20px;
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// 	-ms-transform: translate(-50%, -50%);
+//   }
+
+//   ======================================
+.shop {
+	margin: auto;
+	text-align: center;
+	top: 40%;
+    height: 15vh;
+	width: 100vw;
+}
 .green_stripe {
 	display: flex;
 	background-image: url(../content/green-featured-footer.jpg);
-height: 15vh;
+    height: 10vh;
 	width: 100vw;
 text-align: right;
 text-align: center;
@@ -497,11 +538,9 @@ justify-content: space-evenly;
 .great_btn {
 	border-radius: 36px;
 	transition: .9s linear;
-	background-color: #49b733;
+	background-image: url(../content/green-featured-footer.jpg);
 	border: solid 2px;
-	// background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
 	background-position: 100% 0;
-	background-size: 200% 200%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-weight: 300;
@@ -511,14 +550,42 @@ justify-content: space-evenly;
 	padding: 0.5% 2% 0.5% 2%;
 }
 
-.great_btn:hover {
-	background-color: #0bf90b;
-	box-shadow:  0 0px 0px 40px inset;
-}  
+// .great_btn:hover {
+// 	// box-shadow:  0 0px 0px 40px inset;
+// } 
+.great_btn {
+	position: relative;
+	transition-duration: 1.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	width: 200px;
+  }
+  
+  .great_btn:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -100px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+  }
+  
+  .great_btn:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
 b {
 	text-align:center; 
 	font-size: 2vw;
-color: rgb(64, 255, 0);
+    color: rgb(64, 255, 0);
 }
 // .big_img {
 // 	height: 25vh;
@@ -784,9 +851,9 @@ flex-wrap: wrap;
   fill: #4a7def;
 }
 .icons {
-	width: 305px;
-	height: 105px;
-	background-image: url(../content/details-s.png);
+	// width: 305px;
+	// height: 105px;
+	// background-image: url(../content/details-s.png);
 	background-repeat: no-repeat;
 	margin: auto;
     display: flex;
@@ -796,8 +863,37 @@ flex-wrap: wrap;
 	// object-fit: cover;
     // object-position: 50% 50%;
 	// display: grid;
+	display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 53px;
+    height: 53px;
+    background-color: #81868e;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    text-align: center;
+	transition-delay: 1.5s;
 }
-
+.icons:hover {
+	background-color: #08C958;
+	transition: all 1.4s ease 0s;
+	transition-timing-function: ease-in-out;
+	transition: 2s;
+}
+.ico {
+    width: 32px;
+    width: 32px;
+}
 .abdulah_norman {
 	width: 300px;
     width: 100px;
@@ -817,7 +913,7 @@ flex-wrap: wrap;
     align-items: center;
 	background-image: url(../content/green-featured-footer.jpg);
 	background-repeat: no-repeat;
-    height: 15vh;
+    height: 18vh;
 	width: 80vw;
     text-align: right;
     text-align: center;
@@ -1121,3 +1217,12 @@ flex-direction: column;
 	100% {opacity:0;}
 }
 // анімація круга-процента кінець
+
+// @media (hover: hover) {
+// 	a:hover {
+// 		color: red;}
+// 		.great_btn:hover {
+// 			background-color: red;
+// 		}
+	
+// }
